@@ -1,0 +1,57 @@
+{
+  "name": "pattern",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.5",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "eslint": "./node_modules/.bin/eslint --init"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "arrow-parens": 0,
+      "react/jsx-first-prop-new-line": 1,
+      "import/newline-after-import": 0,
+      "import/no-dynamic-require": 0,
+      "no-console": 0
+    }
+  },
+  "author": "",
+  "license": ""
+}
